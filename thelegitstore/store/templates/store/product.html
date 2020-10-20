@@ -1,0 +1,23 @@
+{% extends 'store/basic.html' %}
+{% block title %} {{product.product_name}} {% endblock %}
+{% block body %}
+<div class="container my-3">
+	<div class="row">
+		<div class="col-lg-3">
+
+			<img src="/media/{{product.image}}" width="230px" height="250px">
+
+		</div>
+
+      <div class="col-lg-9">
+          <h1>{{product.product_name}}</h1>
+          <h3>{{product.price}}</h3>
+          <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+          <p>{{product.description}}</p>      	
+
+      </div>
+
+	</div>
+</div>
+
+{% endblock %}
